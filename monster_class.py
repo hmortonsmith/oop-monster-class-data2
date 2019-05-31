@@ -1,10 +1,13 @@
 class Monster:
 
     # define attributes
-    def __init__(self, name = '', age = 0):
+    def __init__(self, name='', age=0, rating=0,):
         self.skills = []
         self.name = name
+        self.national_insurance = ''
         self.age = int(age)
+        self.scary_rating = rating
+        
         
     # define methods
     def sleep(self):
@@ -24,4 +27,4 @@ class Monster:
     
     def add_skill(self, skills):
         self.skills.append(skills)
-    
+        
